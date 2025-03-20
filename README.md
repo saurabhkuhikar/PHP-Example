@@ -1,14 +1,14 @@
 # PHP-Example
 - [Merge two sorted arrays using loops without using built-in sorting functions](#merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
-- [Reverse an array without using array functions using a loop.](Reverse-an-array-without-using-array-functions-using-a-loop.)
-- [Check if a number is an Armstrong number using a loop.](Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
-- [Find the sum of all elements in an array using a loop.](Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
-- [Find the largest and smallest elements in an array without using built-in functions.](Find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions.)
-- [Reverse an array using a loop without using built-in function.](Reverse-an-array-using-a-loop-without-using-built-in-function.)
-- [Count occurrences of each element in an array using loops.](Count-occurrences-of-each-element-in-an-array-using-loops.)
-- [Remove duplicate elements from an array without using built in functions.](Remove-duplicate-elements-from-an-array-without-using-built-in-functions.)
-- [Find duplicate elements from an array without using built-in functions.](Find-duplicate-elements-from-an-array-without-using-built-in-functions.)
-- [Find the second largest element in an array using a single loop.](Find-the-second-largest-element-in-an-array-using-a-single-loop.)
+- [Reverse an array without using array functions using a loop.](#Reverse-an-array-without-using-array-functions-using-a-loop.)
+- [Check if a number is an Armstrong number using a loop.](#Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
+- [Find the sum of all elements in an array using a loop.](#Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
+- [Find the largest and smallest elements in an array without using built-in functions.](#Find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions.)
+- [Reverse an array using a loop without using built-in function.](#Reverse-an-array-using-a-loop-without-using-built-in-function.)
+- [Count occurrences of each element in an array using loops.](#Count-occurrences-of-each-element-in-an-array-using-loops.)
+- [Remove duplicate elements from an array without using built in functions.](#Remove-duplicate-elements-from-an-array-without-using-built-in-functions.)
+- [Find duplicate elements from an array without using built-in functions.](#Find-duplicate-elements-from-an-array-without-using-built-in-functions.)
+- [Find the second largest element in an array using a single loop.](#Find-the-second-largest-element-in-an-array-using-a-single-loop.)
    
 ---
 ## Merge two sorted arrays using loops without using built-in sorting functions
