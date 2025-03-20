@@ -1,5 +1,5 @@
 # PHP-Example
-- [Merge two sorted arrays using loops without using built-in sorting functions](merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
+- [Merge two sorted arrays using loops without using built-in sorting functions](#merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
 - [Reverse an array without using array functions using a loop.](Reverse-an-array-without-using-array-functions-using-a-loop.)
 - [Check if a number is an Armstrong number using a loop.](Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
 - [Find the sum of all elements in an array using a loop.](Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
@@ -9,9 +9,10 @@
 - [Remove duplicate elements from an array without using built in functions.](Remove-duplicate-elements-from-an-array-without-using-built-in-functions.)
 - [Find duplicate elements from an array without using built-in functions.](Find-duplicate-elements-from-an-array-without-using-built-in-functions.)
 - [Find the second largest element in an array using a single loop.](Find-the-second-largest-element-in-an-array-using-a-single-loop.)
+- [What is Git?](#what-is-git)
    
 ---
-###  Merge two sorted arrays using loops without using built in sorting functions
+## Merge two sorted arrays using loops without using built-in sorting functions
 Here's the code implementation:
 ```php
 function mergeSortedArrays($arr1, $arr2) {
@@ -54,5 +55,11 @@ $result = mergeSortedArrays($arr1, $arr2);
 echo "Merged Array: ";
 print_r($result);
 ```
+---
+
+
+## What is Git?
+Git is a distributed version control system that helps you track changes to files and collaborate with others. It was created by Linus Torvalds in 2005.
+
 ---
 
