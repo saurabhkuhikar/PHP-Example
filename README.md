@@ -1,4 +1,4 @@
-# PHP-Example
+# PHP Interview Questions
 - [Merge two sorted arrays using loops without using built-in sorting functions](#merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
 - [Reverse an array without using array functions using a loop](#reverse-an-array-without-using-array-functions-using-a-loop)
 - [Check if a number is an Armstrong number using a loop](#check-if-a-number-is-an-armstrong-number-using-a-loop)
