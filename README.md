@@ -1,14 +1,14 @@
 # PHP-Example
 - [Merge two sorted arrays using loops without using built-in sorting functions](#merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
-- [Reverse an array without using array functions using a loop.](#Reverse-an-array-without-using-array-functions-using-a-loop.)
-- [Check if a number is an Armstrong number using a loop.](#Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
-- [Find the sum of all elements in an array using a loop.](#Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
-- [Find the largest and smallest elements in an array without using built-in functions.](#Find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions.)
-- [Reverse an array using a loop without using built-in function.](#Reverse-an-array-using-a-loop-without-using-built-in-function.)
-- [Count occurrences of each element in an array using loops.](#Count-occurrences-of-each-element-in-an-array-using-loops.)
-- [Remove duplicate elements from an array without using built in functions.](#Remove-duplicate-elements-from-an-array-without-using-built-in-functions.)
-- [Find duplicate elements from an array without using built-in functions.](#Find-duplicate-elements-from-an-array-without-using-built-in-functions.)
-- [Find the second largest element in an array using a single loop.](#Find-the-second-largest-element-in-an-array-using-a-single-loop.)
+- [Reverse an array without using array functions using a loop](#reverse-an-array-without-using-array-functions-using-a-loop)
+- [Check if a number is an Armstrong number using a loop](#check-if-a-number-is-an-armstrong-number-using-a-loop)
+- [Find the sum of all elements in an array using a loop](#find-the-sum-of-all-elements-in-an-array-using-a-loop)
+- [Find the largest and smallest elements in an array without using built-in functions](#find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions)
+- [Reverse an array using a loop without using built-in function](#reverse-an-array-using-a-loop-without-using-built-in-function)
+- [Count occurrences of each element in an array using loops](#count-occurrences-of-each-element-in-an-array-using-loops)
+- [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
+- [Find duplicate elements from an array without using built-in functions](#find-duplicate-elements-from-an-array-without-using-built-in-functions)
+- [Find the second largest element in an array using a single loop](#find-the-second-largest-element-in-an-array-using-a-single-loop)
    
 ---
 ## Merge two sorted arrays using loops without using built-in sorting functions
@@ -70,7 +70,7 @@ Array
 ````
 ----
 
-## Reverse an array without using array functions using a loop.
+## Reverse an array without using array functions using a loop
 
 ```php
 function reverse_array($arr) {
@@ -104,7 +104,7 @@ Array
 )
 ````
 ----
-### Check if a number is an Armstrong number using a loop.
+### Check if a number is an Armstrong number using a loop
 An **Armstrong number** (also known as a **Narcissistic number**) for a given number of `n` is a number that is equal to the sum of its own digits each raised to the power of the number of digits.
 
 ### For example:
@@ -136,8 +136,51 @@ echo is_armstrong($number) ? "$number is an Armstrong number." : "$number is not
 ```
 
 **Output**
-```
+````
 153 is an Armstrong number.
 
 ````
 ----
+### Check if a number is an Armstrong number using a loop
+
+```php
+
+function sum_array($arr) {
+    $sum = 0;  // Initialize the sum to 0
+    
+    // Loop through each element in the array and add it to the sum
+    foreach ($arr as $element) {
+        $sum += $element;  // Add each element to the sum
+    }
+
+    return $sum;  // Return the total sum
+}
+
+// Example usage:
+$array = [1, 2, 3, 4, 5];
+echo "The sum of the array elements is: " . sum_array($array);
+
+
+function sum_array2($arr) {
+    $sum = 0;
+    
+    // Loop through each index of the array
+    for ($i = 0; $i < count($arr); $i++) {
+        $sum += $arr[$i];  // Add the element at index $i to the sum
+    }
+
+    return $sum;
+}
+
+// Example usage:
+$array = [1, 2, 3, 4, 5];
+echo "The sum of the array elements is: " . sum_array($array);
+```
+**Output**
+````
+The sum of the array elements is: 15
+
+````
+----
+
+
