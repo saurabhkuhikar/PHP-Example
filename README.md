@@ -4,7 +4,6 @@
 - [Check if a number is an Armstrong number using a loop](#check-if-a-number-is-an-armstrong-number-using-a-loop)
 - [Find the sum of all elements in an array using a loop](#find-the-sum-of-all-elements-in-an-array-using-a-loop)
 - [Find the largest and smallest elements in an array without using built-in functions](#find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions)
-- [Reverse an array using a loop without using built-in function](#reverse-an-array-using-a-loop-without-using-built-in-function)
 - [Count occurrences of each element in an array using loops](#count-occurrences-of-each-element-in-an-array-using-loops)
 - [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find duplicate elements from an array without using built-in functions](#find-duplicate-elements-from-an-array-without-using-built-in-functions)
@@ -141,7 +140,7 @@ echo is_armstrong($number) ? "$number is an Armstrong number." : "$number is not
 
 ````
 ----
-### Check if a number is an Armstrong number using a loop
+### Find the sum of all elements in an array using a loop
 
 ```php
 
@@ -179,6 +178,67 @@ echo "The sum of the array elements is: " . sum_array($array);
 **Output**
 ````
 The sum of the array elements is: 15
+
+````
+----
+### Find the sum of all elements in an array using a loop
+```php
+function sum_array($arr) {
+    $sum = 0;  // Initialize the sum to 0
+    
+    // Loop through each element in the array and add it to the sum
+    foreach ($arr as $element) {
+        $sum += $element;  // Add each element to the sum
+    }
+
+    return $sum;  // Return the total sum
+}
+
+// Example usage:
+$array = [1, 2, 3, 4, 5];
+echo "The sum of the array elements is: " . sum_array($array);
+```
+**Output**
+````
+The sum of the array elements is: 15
+
+````
+----
+
+### Find the largest and smallest elements in an array without using built-in functions
+
+```php
+
+function find_min_max($arr) {
+    // Initialize the first element as both the minimum and maximum
+    $min = $arr[0];
+    $max = $arr[0];
+
+    // Loop through the array starting from the second element
+    foreach ($arr as $element) {
+        if ($element < $min) {
+            $min = $element;  // Update min if a smaller element is found
+        }
+        if ($element > $max) {
+            $max = $element;  // Update max if a larger element is found
+        }
+    }
+
+    return ['min' => $min, 'max' => $max];  // Return an array with min and max values
+}
+
+// Example usage:
+$array = [1, 2, 3, 4, 5];
+$result = find_min_max($array);
+echo "The smallest element is: " . $result['min'] . "\n";
+echo "The largest element is: " . $result['max'] . "\n";
+
+```
+
+**Output**
+````
+The smallest element is: 1
+The largest element is: 5
 
 ````
 ----
