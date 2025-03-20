@@ -1,5 +1,5 @@
 # PHP-Example
-- [Merge two sorted arrays using loops without using built-in sorting functions](Merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functionss)
+- [Merge two sorted arrays using loops without using built-in sorting functions](merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functions)
 - [Reverse an array without using array functions using a loop.](Reverse-an-array-without-using-array-functions-using-a-loop.)
 - [Check if a number is an Armstrong number using a loop.](Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
 - [Find the sum of all elements in an array using a loop.](Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
