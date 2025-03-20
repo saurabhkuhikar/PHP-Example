@@ -136,7 +136,6 @@ echo is_armstrong($number) ? "$number is an Armstrong number." : "$number is not
 **Output**
 ````
 153 is an Armstrong number.
-
 ````
 ----
 ### Find the sum of all elements in an array using a loop
@@ -172,19 +171,17 @@ function sum_array2($arr) {
 
 // Example usage:
 $array = [1, 2, 3, 4, 5];
-echo "The sum of the array elements is: " . sum_array($array);
+echo "The sum of the array elements is: " . sum_array2($array);
 ```
 **Output**
 ````
 The sum of the array elements is: 15
-
 ````
 ----
 
 ### Find the largest and smallest elements in an array without using built-in functions
 
 ```php
-
 function find_min_max($arr) {
     // Initialize the first element as both the minimum and maximum
     $min = $arr[0];
@@ -215,7 +212,6 @@ echo "The largest element is: " . $result['max'] . "\n";
 ````
 The smallest element is: 1
 The largest element is: 5
-
 ````
 ----
 ### Find duplicate elements from an array without using built-in functions
@@ -250,8 +246,6 @@ Element 1 occurs 1 times.
 Element 2 occurs 2 times.
 Element 3 occurs 3 times.
 Element 4 occurs 4 times.
-
-
 ````
 ----
 
@@ -282,10 +276,8 @@ print_r($uniqueArray);
 ?>
 
 ```
-
 **Output**
 ````
-
 Array
 (
     [0] => 1
@@ -294,7 +286,6 @@ Array
     [3] => 4
     [4] => 5
 )
-
 ````
 ----
 
