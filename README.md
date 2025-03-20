@@ -4,9 +4,8 @@
 - [Check if a number is an Armstrong number using a loop](#check-if-a-number-is-an-armstrong-number-using-a-loop)
 - [Find the sum of all elements in an array using a loop](#find-the-sum-of-all-elements-in-an-array-using-a-loop)
 - [Find the largest and smallest elements in an array without using built-in functions](#find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions)
-- [Count occurrences of each element in an array using loops](#count-occurrences-of-each-element-in-an-array-using-loops)
-- [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find duplicate elements from an array without using built-in functions](#find-duplicate-elements-from-an-array-without-using-built-in-functions)
+- [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find the second largest element in an array using a single loop](#find-the-second-largest-element-in-an-array-using-a-single-loop)
    
 ---
@@ -181,29 +180,6 @@ The sum of the array elements is: 15
 
 ````
 ----
-### Find the sum of all elements in an array using a loop
-```php
-function sum_array($arr) {
-    $sum = 0;  // Initialize the sum to 0
-    
-    // Loop through each element in the array and add it to the sum
-    foreach ($arr as $element) {
-        $sum += $element;  // Add each element to the sum
-    }
-
-    return $sum;  // Return the total sum
-}
-
-// Example usage:
-$array = [1, 2, 3, 4, 5];
-echo "The sum of the array elements is: " . sum_array($array);
-```
-**Output**
-````
-The sum of the array elements is: 15
-
-````
-----
 
 ### Find the largest and smallest elements in an array without using built-in functions
 
@@ -242,5 +218,117 @@ The largest element is: 5
 
 ````
 ----
+### Find duplicate elements from an array without using built-in functions
+```php
+   
+function count_occurrences($arr) {
+    $counts = [];  // Initialize an empty array to store counts
+
+    // Loop through the array and directly count occurrences of each element
+    foreach ($arr as $element) {
+        // Increase count for the element in the associative array
+        $counts[$element] = ($counts[$element] ?? 0) + 1;
+    }
+
+    return $counts;
+}
+
+// Example usage:
+$array = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+$occurrences = count_occurrences($array);
+
+// Display the result
+foreach ($occurrences as $element => $count) {
+    echo "Element $element occurs $count times.\n";
+}
+
+```
+
+**Output**
+````
+Element 1 occurs 1 times.
+Element 2 occurs 2 times.
+Element 3 occurs 3 times.
+Element 4 occurs 4 times.
 
 
+````
+----
+
+### Remove duplicate elements from an array without using built in functions
+
+```php
+<?php
+function remove_duplicates($arr) {
+    $uniqueArray = [];  // Initialize an empty array to store unique elements
+
+    // Loop through each element in the original array
+    foreach ($arr as $element) {
+        // Use the element as a key in the associative array
+        // If the element is not already in the unique array, it will be added
+        if (!isset($uniqueArray[$element])) {
+            $uniqueArray[$element] = true;  // Mark the element as seen
+        }
+    }
+
+    // Return the unique array as an indexed array (values only)
+    return array_keys($uniqueArray);
+}
+
+// Example usage:
+$array = [1, 2, 2, 3, 4, 3, 5, 1];
+$uniqueArray = remove_duplicates($array);
+print_r($uniqueArray);
+?>
+
+```
+
+**Output**
+````
+
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 3
+    [3] => 4
+    [4] => 5
+)
+
+````
+----
+
+
+### Find the second largest element in an array using a single loop
+
+```php
+
+function find_second_largest($arr) {
+    if (count($arr) < 2) {
+        return null;  // If there are fewer than two elements, return null
+    }
+
+    $largest = $second_largest = null;
+
+    foreach ($arr as $element) {
+        if ($largest === null || $element > $largest) {
+            $second_largest = $largest;
+            $largest = $element;
+        } elseif ($element !== $largest && ($second_largest === null || $element > $second_largest)) {
+            $second_largest = $element;
+        }
+    }
+
+    return $second_largest;
+}
+
+// Example usage:
+$array = [1, 2, 3, 4, 5];
+$secondLargest = find_second_largest($array);
+echo "The second largest element is: " . ($secondLargest ?? "None") . "\n";
+```
+
+**Output**
+````
+The second largest element is: 4
+````
