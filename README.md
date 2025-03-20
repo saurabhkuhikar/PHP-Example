@@ -2,15 +2,16 @@
 1. [Merge two sorted arrays using loops without using built-in sorting functions](Merge-two-sorted-arrays-using-loops-without-using-built-in-sorting-functionss)
 2. [Reverse an array without using array functions using a loop.](Reverse-an-array-without-using-array-functions-using-a-loop.)
 3. [Check if a number is an Armstrong number using a loop.](Check-if-a-number-is-an-Armstrong-number-using-a-loop.)
-4. [Find the sum of all elements in an array using a loop.](Find the sum of all elements in an array using a loop.)
+4. [Find the sum of all elements in an array using a loop.](Find-the-sum-of-all-elements-in-an-array-using-a-oop.)
 5. [Find the largest and smallest elements in an array without using built-in functions.](Find-the-largest-and-smallest-elements-in-an-array-without-using-built-in-functions.)
-6. Reverse an array using a loop (without using array_reverse()).
-7. Count occurrences of each element in an array using loops.
-8. Remove duplicate elements from an array without using built-in functions.
-9. Find duplicate elements from an array without using built-in functions.
-10. Find the second largest element in an array using a single loop.
+6. [Reverse an array using a loop without using built-in function].(Reverse-an-array-using-a-loop-without-using-built-in-function)
+7. [Count occurrences of each element in an array using loops.](Count-occurrences-of-each-element-in-an-array-using-loops.)
+8. [Remove duplicate elements from an array without using built in functions].(Remove-duplicate-elements-from-an-array-without-using-built-in-functions)
+9. [Find duplicate elements from an array without using built-in functions.](Find-duplicate-elements-from-an-array-without-using-built-in-functions.)
+10.[Find the second largest element in an array using a single loop.](Find-the-second-largest-element-in-an-array-using-a-single-loop.)
+   
 -----
-### Merge two sorted arrays using loops without using built-in sorting functions
+### Merge two sorted arrays using loops without using built in sorting functions
    <?php
       function mergeSortedArrays($arr1, $arr2) {
           $merged = [];
@@ -52,3 +53,4 @@
       echo "Merged Array: ";
       print_r($result);
    ?>
+
