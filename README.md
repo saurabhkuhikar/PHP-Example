@@ -90,6 +90,25 @@ function reverse_array($arr) {
 $array = [1, 2, 3, 4, 5];
 $reversedArray = reverse_array($array);
 print_r($reversedArray);
+
+#Example 2
+function reverse_array($arr) {
+    $n = count($arr); // Get the length of the array
+    $tempArr = [];
+    // Loop through the array backwards
+    for ($i = 0; $i < $n; $i++) {
+        // Insert elements at the beginning of tempArr to reverse
+        $tempArr[] = $arr[$n - $i - 1];
+    }
+
+    return $tempArr;
+}
+
+// Example usage:
+$array = [1, 22, 13, 4, 5];
+$reversedArray = reverse_array($array);
+print_r($reversedArray);
+
 ```
 **Output**
 ```
