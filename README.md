@@ -7,6 +7,7 @@
 - [Find duplicate elements from an array without using built-in functions](#find-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find the second largest element in an array using a single loop](#find-the-second-largest-element-in-an-array-using-a-single-loop)
+- [Sort the array without using built in function](#sort-the-array-without using-built-in-function)
    
 ---
 ## Merge two sorted arrays using loops without using built-in sorting functions
@@ -323,3 +324,36 @@ echo "The second largest element is: " . ($secondLargest ?? "None") . "\n";
 ````
 The second largest element is: 4
 ````
+----
+### Sort the array without using built in function
+````php
+$array = [50,12, 30, 10, 9, 14];
+$count = 0;
+foreach($array as $elem){
+    $count++;
+}
+for ($i = 0; $i < $count; $i++) {
+    for ($j = 0; $j < $count - $i - 1; $j++) {
+        if ($array[$j] > $array[$j + 1]) { 
+            $temp = $array[$j];
+            $array[$j] = $array[$j + 1]; 
+            $array[$j +1] = $temp; 
+        }
+    }
+}
+print_r($array);
+````
+
+**Output**
+````
+Array
+(
+    [0]=> 9
+    [1] => 10
+    [2] => 12
+    [3] => 14
+    [4] => 30
+    [5] => 50
+)
+````
+----
