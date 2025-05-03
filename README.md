@@ -29,7 +29,7 @@ function mergeSortedArrays($arr1, $arr2) {
         }
     }
 
-    // If any elements are left in the first array, append them
+    // If any elements are left in the first array, append them  
     while ($i < count($arr1)) {
         $merged[] = $arr1[$i];
         $i++;
