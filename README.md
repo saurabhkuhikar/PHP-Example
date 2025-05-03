@@ -8,6 +8,8 @@
 - [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find the second largest element in an array using a single loop](#find-the-second-largest-element-in-an-array-using-a-single-loop)
 - [Sort the array without using built in functions](#sort-the-array-without-using-built-in-functions)
+
+
    
 ---
 ## Merge two sorted arrays using loops without using built-in sorting functions
