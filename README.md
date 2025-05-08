@@ -312,7 +312,6 @@ Array
 ````
 ----
 
-
 ### Find the second largest element in an array using a single loop
 
 ```php
@@ -381,7 +380,8 @@ Array
 ````
 ----
 
-### what-happens-if-a-class-uses-two-traits-that-both-define-a-method-with-the-same-name
+### what happens if a class uses two traits that both define a method with the same name?
+
 ```php
 
 trait TraitA {
