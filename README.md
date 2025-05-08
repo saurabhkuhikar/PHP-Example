@@ -8,9 +8,9 @@
 - [Remove duplicate elements from an array without using built in functions](#remove-duplicate-elements-from-an-array-without-using-built-in-functions)
 - [Find the second largest element in an array using a single loop](#find-the-second-largest-element-in-an-array-using-a-single-loop)
 - [Sort the array without using built in functions](#sort-the-array-without-using-built-in-functions)
-- [In PHP, what happens if a class uses two traits that both define a method with the same name? What happence in this case](#In-PHP-what-happens-if-a-class-uses-two-traits-that-both-define-a-method-with-the-same-name?-What-happened-in-this-case)
+- [In PHP, what happens if a class uses two traits that both define a method with the same name? What happence in this case](#what-happens-if-a-class-uses-two-traits-that-both-define-a-method-with-the-same-name)
 
-
+ 
    
 ---
 ## Merge two sorted arrays using loops without using built-in sorting functions
@@ -381,7 +381,7 @@ Array
 ````
 ----
 
-### In-PHP-what-happens-if-a-class-uses-two-traits-that-both-define-a-method-with-the-same-name?-What-happened-in-this-case
+### what-happens-if-a-class-uses-two-traits-that-both-define-a-method-with-the-same-name
 ```php
 
 trait TraitA {
